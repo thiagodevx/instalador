@@ -1,0 +1,19 @@
+{
+  "name": "instalador",
+  "version": "1.0.0",
+  "description": "repositório para criar instalador para aplicações desktop em linux e windows, com dependência de banco de dados mongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagodevx/instalador.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thiagodevx/instalador/issues"
+  },
+  "homepage": "https://github.com/thiagodevx/instalador#readme"
+}
