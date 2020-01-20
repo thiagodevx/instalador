@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thiagodevx/instalador/issues"
   },
-  "homepage": "https://github.com/thiagodevx/instalador#readme"
+  "homepage": "https://github.com/thiagodevx/instalador#readme",
+  "devDependencies": {
+    "electron-builder": "^22.2.0"
+  }
 }
