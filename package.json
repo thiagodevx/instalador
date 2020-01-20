@@ -4,7 +4,9 @@
   "description": "repositório para criar instalador para aplicações desktop em linux e windows, com dependência de banco de dados mongoDB",
   "main": "index.js",
   "scripts": {
+    "postinstall": "electron-builder install-app-deps",
     "pack": "build --dir",
+    "start": "electron .",
     "dist": "build"
   },
   "repository": {
@@ -13,11 +15,36 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/thiagodevx/instalador/issues"
-  },
   "homepage": "https://github.com/thiagodevx/instalador#readme",
   "devDependencies": {
-    "electron-builder": "^22.2.0"
+    "electron-builder": "20.0"
+  },
+  "build": {
+    "appId": "instaladorv1",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/ico.ico"
+    }
   }
 }
